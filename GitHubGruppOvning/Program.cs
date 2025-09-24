@@ -68,7 +68,10 @@
                     // KOD
                     break;
                 case 6:
-                    //KOD
+                    Console.WriteLine("Ange cirkelns radie: ");
+                    double radie = Convert.ToDouble(Console.ReadLine());
+                    double area = Math.PI * Math.Pow(radie, 2);
+                    Console.WriteLine($"Arean av cirkeln är: {area}.");
                     break;
                 case 7:
                     //KOD
