@@ -2,7 +2,13 @@
 {
     internal class Program
     {
-
+        static void Circle()
+        {
+            Console.WriteLine("Ange cirkelns radie: ");
+            double radie = Convert.ToDouble(Console.ReadLine());
+            double area = Math.PI * Math.Pow(radie, 2);
+            Console.WriteLine($"Arean av cirkeln är: {area}.");
+        }
         static void Main(string[] args)
         {
             int numberOne;
@@ -68,10 +74,7 @@
                     // KOD
                     break;
                 case 6:
-                    Console.WriteLine("Ange cirkelns radie: ");
-                    double radie = Convert.ToDouble(Console.ReadLine());
-                    double area = Math.PI * Math.Pow(radie, 2);
-                    Console.WriteLine($"Arean av cirkeln är: {area}.");
+                    Circle();
                     break;
                 case 7:
                     //KOD
