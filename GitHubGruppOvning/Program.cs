@@ -3,9 +3,32 @@
     internal class Program
     {
 
-      
+      static void Square()
+      {
+         double length;
+         double width;
+         double sum;
+         Console.WriteLine("Beräkna arean på en fyrkant");
+         Console.WriteLine("Ange längd: ");
+         while (!double.TryParse(Console.ReadLine(), out length))
+         {
+            Console.WriteLine("Du måste ange heltal");
+         }
+         Console.WriteLine("Ange höjd: ");
+         while (!double.TryParse(Console.ReadLine(), out width))
+         {
+            Console.WriteLine("Du måste ange heltal");
+         }
 
-        static void Main(string[] args)
+         sum = length * width;
+
+         Console.WriteLine($"Arean = {sum}");
+
+
+
+      }
+
+      static void Main(string[] args)
         {
             int numberOne;
             int numberTwo;
@@ -76,8 +99,8 @@
                     Console.WriteLine($"Arean av cirkeln är: {area}.");
                     break;
                 case 7:
+               Square();
               
-                    
                     break;
                 case 8:
                     //KOD
