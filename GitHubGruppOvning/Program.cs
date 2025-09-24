@@ -1,5 +1,5 @@
 ﻿namespace GitHubGruppOvning
-{
+{ 
     internal class Program
     {
 
