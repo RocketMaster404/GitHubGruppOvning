@@ -1,13 +1,5 @@
 ﻿namespace GitHubGruppOvning
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            int numberOne;
-            int numberTwo;
-            int sum;
-
+{ 
     internal class Program
     {
         static void Main(string[] args)
