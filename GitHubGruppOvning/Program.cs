@@ -6,6 +6,7 @@
         {
          int numberOne;
          int numberTwo;
+         int sum;
 
          Console.WriteLine("Ange ditt val");
          int input;
