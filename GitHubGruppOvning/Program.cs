@@ -3,6 +3,8 @@
     internal class Program
     {
 
+      
+
         static void Main(string[] args)
         {
             int numberOne;
@@ -71,7 +73,8 @@
                     //KOD
                     break;
                 case 7:
-                    //KOD
+              
+                    
                     break;
                 case 8:
                     //KOD
