@@ -1,5 +1,5 @@
 ﻿namespace GitHubGruppOvning
-{
+{ 
     internal class Program
     {
         static void Circle()
@@ -71,7 +71,22 @@
                     Console.WriteLine($"{numberOne} / {numberTwo} = {sum}");
                     break;
                 case 5:
-                    // KOD
+                    Console.WriteLine("Ange ditt första basen.");
+                    numberOne = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ange ditt andra exponenten.");
+                    numberTwo = int.Parse(Console.ReadLine());
+                    int result = Potens(numberOne, numberTwo);
+                    Console.WriteLine($"{numberOne} upphöjt till {numberTwo} är {result}");
+
+                    static int Potens (int numberOne, int numberTwo)
+                    {
+                        int result = 1;
+                        for (int i = 0; i < numberTwo; i++)
+                        {
+                            result *= numberOne;
+                        }
+                        return result;
+                    }
                     break;
                 case 6:
                     Circle();
