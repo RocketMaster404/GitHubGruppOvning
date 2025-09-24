@@ -15,12 +15,15 @@
             Console.WriteLine("2. Subtrahera");
             Console.WriteLine("3. Multiplicera");
             Console.WriteLine("4. Dividera");
+            Console.WriteLine("5. Potens");
+            Console.WriteLine("6. Area av Cirkel");
+            Console.WriteLine("7. Area av Fyrkant");
+            Console.WriteLine("8. Area av Triangel");
             int input;
             while (!int.TryParse(Console.ReadLine(), out input))
             {
                 Console.WriteLine("Du måste ange ett heltal");
             }
-
             switch (input)
             {
                 case 1:
@@ -60,6 +63,18 @@
                     numberTwo = int.Parse(Console.ReadLine());
                     sum = numberOne / numberTwo;
                     Console.WriteLine($"{numberOne} / {numberTwo} = {sum}");
+                    break;
+                case 5:
+                    // KOD
+                    break;
+                case 6:
+                    //KOD
+                    break;
+                case 7:
+                    //KOD
+                    break;
+                case 8:
+                    //KOD
                     break;
             }
         }
