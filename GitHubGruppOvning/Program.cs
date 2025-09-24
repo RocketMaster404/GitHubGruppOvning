@@ -24,6 +24,22 @@
                // Subtraktion
                break;
             case 3:
+               Console.WriteLine("Ange tal 1: ");
+               while(!int.TryParse(Console.ReadLine(), out numberOne))
+               {
+                  Console.WriteLine(" Du måste ange heltal");
+               }
+
+               Console.WriteLine("Ange tal 2: ");
+               while (!int.TryParse(Console.ReadLine(), out numberTwo))
+               {
+                  Console.WriteLine(" Du måste ange heltal");
+               }
+
+               sum = numberOne * numberTwo;
+
+               Console.WriteLine($"{numberOne} * {numberTwo} = {sum}");
+
                //Multiplikation
                break;
             case 4:
