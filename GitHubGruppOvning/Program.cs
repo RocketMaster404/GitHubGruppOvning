@@ -71,9 +71,9 @@
                     Console.WriteLine($"{numberOne} / {numberTwo} = {sum}");
                     break;
                 case 5:
-                    Console.WriteLine("Ange ditt första basen.");
+                    Console.WriteLine("Ange basen.");
                     numberOne = int.Parse(Console.ReadLine());
-                    Console.WriteLine("Ange ditt andra exponenten.");
+                    Console.WriteLine("Ange exponenten.");
                     numberTwo = int.Parse(Console.ReadLine());
                     int result = Potens(numberOne, numberTwo);
                     Console.WriteLine($"{numberOne} upphöjt till {numberTwo} är {result}");
