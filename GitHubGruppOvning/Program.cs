@@ -8,6 +8,15 @@
             int numberTwo;
             int sum;
 
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int numberOne;
+            int numberTwo;
+            int sum;
+
+
             Console.WriteLine("Ange ditt val");
             Console.WriteLine("1. Addera");
             Console.WriteLine("2. Subtrahera");
@@ -23,6 +32,14 @@
             {
                 case 1:
                     // Addition
+                    Console.WriteLine("Skriv första talet:");
+                    numberOne = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Skriv andra talet:");
+                    numberTwo = int.Parse(Console.ReadLine());
+
+                    sum = numberOne + numberTwo;
+                    Console.WriteLine("Summan är: " + sum);
                     break;
                 case 2:
                     Console.WriteLine("Välj ditt första tal:");
