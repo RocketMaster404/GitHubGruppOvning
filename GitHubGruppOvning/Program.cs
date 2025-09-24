@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-         
+         int numberOne;
+         int numberTwo;
+
          Console.WriteLine("Ange ditt val");
          int input;
          while(!int.TryParse(Console.ReadLine(), out input))
