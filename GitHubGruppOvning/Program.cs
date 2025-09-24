@@ -75,6 +75,13 @@
                     break;
                 case 8:
                     //KOD
+                    Console.Write("Längd: ");
+                    double längd = double.Parse(Console.ReadLine());
+
+                    Console.Write("Bredd: ");
+                    double bredd = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Area: " + (längd * bredd / 2));
                     break;
             }
         }
