@@ -1,7 +1,15 @@
 ﻿namespace GitHubGruppOvning
-{
+{ 
     internal class Program
     {
+        static void Circle()
+        {
+            Console.WriteLine("Ange cirkelns radie: ");
+            double radie = Convert.ToDouble(Console.ReadLine());
+            double area = Math.PI * Math.Pow(radie, 2);
+            Console.WriteLine($"Arean av cirkeln är: {area}.");
+        }
+        static void Main(string[] args)
 
       static void Square()
       {
@@ -90,13 +98,25 @@
                     Console.WriteLine($"{numberOne} / {numberTwo} = {sum}");
                     break;
                 case 5:
-                    // KOD
+                    Console.WriteLine("Ange basen.");
+                    numberOne = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ange exponenten.");
+                    numberTwo = int.Parse(Console.ReadLine());
+                    int result = Potens(numberOne, numberTwo);
+                    Console.WriteLine($"{numberOne} upphöjt till {numberTwo} är {result}");
+
+                    static int Potens (int numberOne, int numberTwo)
+                    {
+                        int result = 1;
+                        for (int i = 0; i < numberTwo; i++)
+                        {
+                            result *= numberOne;
+                        }
+                        return result;
+                    }
                     break;
                 case 6:
-                    Console.WriteLine("Ange cirkelns radie: ");
-                    double radie = Convert.ToDouble(Console.ReadLine());
-                    double area = Math.PI * Math.Pow(radie, 2);
-                    Console.WriteLine($"Arean av cirkeln är: {area}.");
+                    Circle();
                     break;
                 case 7:
                Square();
@@ -104,6 +124,11 @@
                     break;
                 case 8:
                     //KOD
+                    Console.Write("Längd: ");
+                    double längd = double.Parse(Console.ReadLine());
+                    Console.Write("Bredd: ");
+                    double bredd = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Area: " + (längd * bredd / 2));
                     break;
             }
         }
