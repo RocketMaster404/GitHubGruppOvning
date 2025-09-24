@@ -25,8 +25,13 @@
                // Addition
                break;
             case 2:
-               // Subtraktion
-               break;
+                    Console.WriteLine("Välj ditt första tal:");
+                    numberOne = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Välj ditt andra tal.");
+                    numberTwo = int.Parse(Console.ReadLine());
+                    sum = numberOne - numberTwo;
+                    Console.WriteLine($"{numberOne} - {numberTwo} = {sum} ");
+                    break;
             case 3:
                Console.WriteLine("Ange tal 1: ");
                while (!int.TryParse(Console.ReadLine(), out numberOne))
